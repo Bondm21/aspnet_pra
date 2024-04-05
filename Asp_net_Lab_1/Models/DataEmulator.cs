@@ -1,7 +1,10 @@
-﻿namespace Asp_net_Lab_1.Models
+﻿using Microsoft.AspNetCore.Cors;
+
+namespace Asp_net_Lab_1.Models
 {
     public class DataEmulator
     {
+        
         public static List<User> Users { get; set; } = new List<User>
         {
             new User { Id = 1, FullName = "John Doe", Email = "john@example.com", PhoneNumber = "1234567890", Address = "123 Main St" },
@@ -17,6 +20,5 @@
             new Order { Id = 1, UserId = 1, ProductName = "Product 1", TotalPrice = 10.99m },
             new Order { Id = 2, UserId = 2, ProductName = "Product 2", TotalPrice = 20.99m }
         };
-        //coment
     }
 }

@@ -1,19 +1,23 @@
 ﻿@model IEnumerable<Asp_net_Lab_1.Models.User>
+@using Asp_net_Lab_1.Resources
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<Texts> Localizer
 
-<h2>Користувачі</h2>
+<h2>@Localizer["Користувачі"]</h2>
 
 <p>
-    <a asp-action="CreateUser">Створити нового користувача</a>
+    <a asp-action="CreateUser">@Localizer["Створити нового покупця"]</a>
 </p>
+
 
 <table class="table">
     <thead>
         <tr>
             <th>ID</th>
-            <th>Повне ім'я</th>
-            <th>Email</th>
-            <th>Номер телефону</th>
-            <th>Адреса</th>
+            <th>@Localizer["Повне ім'я"]</th>
+            <th>@Localizer["Email"]</th>
+            <th>@Localizer["Номер телефону"]</th>
+            <th>@Localizer["Адреса"]</th>
             <th></th>
         </tr>
     </thead>
@@ -27,8 +31,8 @@
                 <td>@user.PhoneNumber</td>
                 <td>@user.Address</td>
                 <td>
-                    <a asp-action="EditUser" asp-route-id="@user.Id">Редагувати</a> |
-                    <a asp-action="DeleteUser" asp-route-id="@user.Id">Видалити</a>
+                    <a asp-action="EditUser" asp-route-id="@user.Id">@Localizer["Редагувати"]</a> |
+                    <a asp-action="DeleteUser" asp-route-id="@user.Id">@Localizer["Видалити"]</a>
                 </td>
             </tr>
         }

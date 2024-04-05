@@ -1,7 +1,36 @@
+using System.Collections.Generic;
+using System.Globalization;
+using System.Reflection;
+using Asp_net_Lab_1.Models;
+using Asp_net_Lab_1.Resources;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.Localization.Routing;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Options;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddControllersWithViews();
+
+builder.Services
+    .AddControllersWithViews()
+    .AddDataAnnotationsLocalization();
+builder.Services.AddLocalization(/*options => options.ResourcesPath = "Resources"*/);
+builder.Services.Configure<RequestLocalizationOptions>(options =>
+{
+    List<CultureInfo> supportedCultures = new List<CultureInfo>()
+    {
+        new CultureInfo("en-us"),
+        new CultureInfo("uk-ua")
+    };
+    options.DefaultRequestCulture = new RequestCulture("en-us");
+    options.SupportedCultures = supportedCultures;
+    options.SupportedUICultures = supportedCultures;
+
+    var requestProvider = new RouteDataRequestCultureProvider();
+    options.RequestCultureProviders.Insert(0, requestProvider);
+});
 
 var app = builder.Build();
 
@@ -13,55 +42,17 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-
-
-//sdfojsd;fj;sjfd;sdjfs;djf;sjdf;sdjf;sdjihfsdjsd;jif
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseRequestLocalization(app.Services.GetService<IOptions<RequestLocalizationOptions>>().Value);
+
 app.UseAuthorization();
 
-
-app.UseEndpoints(endpoints =>
-{
-    endpoints.MapControllerRoute(
-        name: "default",
-        pattern: "{controller=Home}/{action=Index}/{id?}");
-    endpoints.MapControllerRoute(
-        name: "order",
-        pattern: "Order/{action=Index}/{id?}",
-        defaults: new { controller = "Order", action = "Index" });
-
-});
-
-
-
-app.UseEndpoints(endpoints =>
-{
-    endpoints.MapControllerRoute(
-        name: "default",
-        pattern: "{controller=Home}/{action=Index}/{id?}");
-    endpoints.MapControllerRoute(
-        name: "user",
-        pattern: "User/{action=Index}/{id?}",
-        defaults: new { controller = "User", action = "Index" });
-});
-
-app.UseEndpoints(endpoints =>
-{
-    endpoints.MapControllerRoute(
-        name: "product",
-        pattern: "Product/{action=Privacy}/{id?}",
-        defaults: new { controller = "Product" });
-
-    endpoints.MapControllerRoute(
-        name: "default",
-        pattern: "{controller=Home}/{action=Privacy}/{id?}");
-});
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{culture=en-US}/{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

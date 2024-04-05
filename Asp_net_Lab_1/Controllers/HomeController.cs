@@ -1,27 +1,33 @@
 using Asp_net_Lab_1.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using Asp_net_Lab_1.Resources;
+using Microsoft.Extensions.Localization;
 
 namespace Asp_net_Lab_1.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IStringLocalizer<Texts> _localizer;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IStringLocalizer<Texts> localizer)
         {
             _logger = logger;
+            _localizer = localizer;
         }
 
         public IActionResult Index()
         {
             var users = DataEmulator.Users;
+            ViewBag.Користувачі = _localizer["Користувачі"].Value;
             return View(users);
         }
 
 
         public IActionResult CreateUser()
         {
+
             return View();
         }
 
@@ -123,7 +129,7 @@ namespace Asp_net_Lab_1.Controllers
                 return RedirectToAction(nameof(Privacy));
             }
 			return Redirect(ViewBag.ReturnUrl);
-			//return View(product);
+
 
         }
 
@@ -225,7 +231,7 @@ namespace Asp_net_Lab_1.Controllers
             {
                 return NotFound();
             }
-            return View("EditOrder", order); // Вказуємо назву представлення явно
+            return View("EditOrder", order); 
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
