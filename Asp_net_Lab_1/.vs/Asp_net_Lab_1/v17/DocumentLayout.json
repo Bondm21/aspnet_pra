@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kolbond\\source\\repos\\Asp_net_Lab_1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3B63C850-9921-46EE-83AD-B42C1EDC32B6}|TestProject1\\Asp_net_Lab1.csproj|c:\\users\\kolbond\\source\\repos\\asp_net_lab_1\\testproject1\\asp_net_lab_1.controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B63C850-9921-46EE-83AD-B42C1EDC32B6}|TestProject1\\Asp_net_Lab1.csproj|solutionrelative:testproject1\\asp_net_lab_1.controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA9DCA15-AD63-471C-B8A6-F2403F650A62}|Asp_net_Lab_1\\Asp_net_Lab_1.csproj|c:\\users\\kolbond\\source\\repos\\asp_net_lab_1\\asp_net_lab_1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA9DCA15-AD63-471C-B8A6-F2403F650A62}|Asp_net_Lab_1\\Asp_net_Lab_1.csproj|solutionrelative:asp_net_lab_1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B63C850-9921-46EE-83AD-B42C1EDC32B6}|TestProject1\\Asp_net_Lab1.csproj|c:\\users\\kolbond\\source\\repos\\asp_net_lab_1\\testproject1\\asp_net_lab_1.models.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B63C850-9921-46EE-83AD-B42C1EDC32B6}|TestProject1\\Asp_net_Lab1.csproj|solutionrelative:testproject1\\asp_net_lab_1.models.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Asp_net_Lab_1.Models.cs",
+              "DocumentMoniker": "C:\\Users\\kolbond\\source\\repos\\Asp_net_Lab_1\\TestProject1\\Asp_net_Lab_1.Models.cs",
+              "RelativeDocumentMoniker": "TestProject1\\Asp_net_Lab_1.Models.cs",
+              "ToolTip": "C:\\Users\\kolbond\\source\\repos\\Asp_net_Lab_1\\TestProject1\\Asp_net_Lab_1.Models.cs",
+              "RelativeToolTip": "TestProject1\\Asp_net_Lab_1.Models.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:42:27.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Asp_net_Lab_1.Controller.cs",
+              "DocumentMoniker": "C:\\Users\\kolbond\\source\\repos\\Asp_net_Lab_1\\TestProject1\\Asp_net_Lab_1.Controller.cs",
+              "RelativeDocumentMoniker": "TestProject1\\Asp_net_Lab_1.Controller.cs",
+              "ToolTip": "C:\\Users\\kolbond\\source\\repos\\Asp_net_Lab_1\\TestProject1\\Asp_net_Lab_1.Controller.cs",
+              "RelativeToolTip": "TestProject1\\Asp_net_Lab_1.Controller.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAgwEQAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:41:36.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\kolbond\\source\\repos\\Asp_net_Lab_1\\Asp_net_Lab_1\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Asp_net_Lab_1\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\kolbond\\source\\repos\\Asp_net_Lab_1\\Asp_net_Lab_1\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Asp_net_Lab_1\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAowDAAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T14:16:43.712Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
