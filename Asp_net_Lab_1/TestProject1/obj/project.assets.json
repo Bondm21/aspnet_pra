@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {
+    "net6.0": {
       "coverlet.collector/6.0.2": {
         "type": "package",
         "build": {
@@ -3203,7 +3203,7 @@
       },
       "Asp_net_Lab_1/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "DataEmulator": "1.0.0",
           "Microsoft.AspNetCore.Mvc.Localization": "2.2.0",
@@ -3221,7 +3221,7 @@
       },
       "DataEmulator/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
+        "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
           "bin/placeholder/DataEmulator.dll": {}
         },
@@ -9228,7 +9228,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net8.0": [
+    "net6.0": [
       "Asp_net_Lab_1 >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.9.0",
       "Microsoft.Playwright.NUnit >= 1.43.0",
@@ -9239,39 +9239,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kolbond\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/dmytro.rastoropov/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kolbond\\source\\repos\\Asp_net_Lab_1\\TestProject1\\Asp_net_Lab1.csproj",
+      "projectUniqueName": "/Users/dmytro.rastoropov/Projects/Patterns/aspnet_pra/Asp_net_Lab_1/TestProject1/Asp_net_Lab1.csproj",
       "projectName": "Asp_net_Lab1",
-      "projectPath": "C:\\Users\\kolbond\\source\\repos\\Asp_net_Lab_1\\TestProject1\\Asp_net_Lab1.csproj",
-      "packagesPath": "C:\\Users\\kolbond\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kolbond\\source\\repos\\Asp_net_Lab_1\\TestProject1\\obj\\",
+      "projectPath": "/Users/dmytro.rastoropov/Projects/Patterns/aspnet_pra/Asp_net_Lab_1/TestProject1/Asp_net_Lab1.csproj",
+      "packagesPath": "/Users/dmytro.rastoropov/.nuget/packages/",
+      "outputPath": "/Users/dmytro.rastoropov/Projects/Patterns/aspnet_pra/Asp_net_Lab_1/TestProject1/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\kolbond\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/dmytro.rastoropov/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net8.0"
+        "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\kolbond\\source\\repos\\Asp_net_Lab_1\\Asp_net_Lab_1\\Asp_net_Lab_1.csproj": {
-              "projectPath": "C:\\Users\\kolbond\\source\\repos\\Asp_net_Lab_1\\Asp_net_Lab_1\\Asp_net_Lab_1.csproj"
+            "/Users/dmytro.rastoropov/Projects/Patterns/aspnet_pra/Asp_net_Lab_1/Asp_net_Lab_1/Asp_net_Lab_1.csproj": {
+              "projectPath": "/Users/dmytro.rastoropov/Projects/Patterns/aspnet_pra/Asp_net_Lab_1/Asp_net_Lab_1/Asp_net_Lab_1.csproj"
             }
           }
         }
@@ -9280,16 +9273,11 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
-      "net8.0": {
-        "targetAlias": "net8.0",
+      "net6.0": {
+        "targetAlias": "net6.0",
         "dependencies": {
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
@@ -9326,8 +9314,7 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -9336,7 +9323,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.200/RuntimeIdentifierGraph.json"
       }
     }
   }

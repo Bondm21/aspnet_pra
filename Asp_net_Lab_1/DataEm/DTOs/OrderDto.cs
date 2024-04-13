@@ -1,6 +1,6 @@
-﻿namespace Asp_net_Lab_1.DTOs
+﻿namespace DataEmulator.DTOs
 {
-    public class OrderDTO
+    public class OrderDto
     {
         public int Id { get; set; }
         public int UserId { get; set; }

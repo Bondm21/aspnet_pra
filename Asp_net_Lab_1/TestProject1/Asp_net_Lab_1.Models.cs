@@ -5,7 +5,7 @@ using Asp_net_Lab_1.DTOs;
 
 namespace Tests.Models
 {
-    public class UserTests
+    public class UserViewModelTests
     {
 
 
@@ -13,24 +13,38 @@ namespace Tests.Models
         public void User_Email_Required()
         {
             // Arrange
-            var user = new User();
+            var user = new UserViewModel();
+            user.Email = null; // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ null пїЅпїЅпїЅ Email
+            // todo: create controller instance
 
             // Act
-            user.Email = null; // Спроба встановити значення null для Email
+            // todo: call controller action with invalid view model
+            var result = user.ValidateUserViewModel();// ValidateModel(user);
 
             // Assert
-            var result = ValidateModel(user);
-            Xunit.Assert.Contains("The Email field is required.", result);
+            Xunit.Assert.Contains("The Email field is required.", result.FirstOrDefault().ErrorMessage);
         }
 
 
-        // Допоміжний метод для валідації моделі за допомогою DataAnnotations
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ DataAnnotations
         private string[] ValidateModel(object model)
         {
             var validationResults = new List<ValidationResult>();
             var validationContext = new ValidationContext(model, serviceProvider: null, items: null);
             Validator.TryValidateObject(model, validationContext, validationResults, validateAllProperties: true);
             return validationResults.Select(r => r.ErrorMessage).ToArray();
+        }
+        
+    }
+
+    public static class ValidationExtensions
+    {
+        public static IEnumerable<ValidationResult> ValidateUserViewModel(this UserViewModel userViewModel)
+        {
+            var validationResults = new List<ValidationResult>();
+            var validationContext = new ValidationContext(userViewModel, serviceProvider: null, items: null);
+            Validator.TryValidateObject(userViewModel, validationContext, validationResults, validateAllProperties: true);
+            return validationResults;
         }
     }
 }

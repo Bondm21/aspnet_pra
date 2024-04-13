@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VE/vCrZQ/kp5T5QSeHnZ5iZqP9DsiEs3ta8UlJk7oWIPJAMNENoKXXjc3pr+MDPXYYMx6Lh9ZgoGeJDVg3O8ZA==",
+  "dgSpecHash": "owHUX/3GZEJHNBlWrKseyT6Cw+jlUZ0uX4f47mctM7IfMcxdH9snoMT+3viOEr4tAyPekk+M58ATgXyAr+hxhA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kolbond\\source\\repos\\Asp_net_Lab_1\\DataEm\\DataEmulator.csproj",
+  "projectFilePath": "/Users/dmytro.rastoropov/Projects/Patterns/aspnet_pra/Asp_net_Lab_1/DataEm/DataEmulator.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

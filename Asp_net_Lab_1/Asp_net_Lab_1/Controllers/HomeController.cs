@@ -4,7 +4,9 @@ using System.Diagnostics;
 using Asp_net_Lab_1.Resources;
 using Microsoft.Extensions.Localization;
 using Asp_net_Lab_1.DTOs;
-
+using DataEmulator;
+using DataEmulator.DTOs;
+using DataEmulator.Test;
 
 
 namespace Asp_net_Lab_1.Controllers
@@ -25,7 +27,7 @@ namespace Asp_net_Lab_1.Controllers
 
         public IActionResult Index()
         {
-            var usersDTO = DataEmulator.Users.Select(user => new UserDTO
+            var usersDTO = MockData.Users.Select(user => new UserDTO
             {
                 Id = user.Id,
                 FullName = user.FullName,
@@ -35,7 +37,7 @@ namespace Asp_net_Lab_1.Controllers
                 RegistrationDate = user.RegistrationDate
             }).ToList();
 
-            ViewBag.Користувачі = _localizer["Користувачі"].Value;
+            ViewBag.пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ = _localizer["пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"].Value;
             return View(usersDTO);
         }
 
@@ -50,7 +52,7 @@ namespace Asp_net_Lab_1.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new User
+                var user = new UserViewModel
                 {
                     Id = userDTO.Id,
                     FullName = userDTO.FullName,
@@ -60,7 +62,7 @@ namespace Asp_net_Lab_1.Controllers
                     // RegistrationDate is not editable in this action
                 };
 
-                // Додати нового користувача до списку
+                // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
                 DataEmulator.Users.Add(user);
                 return RedirectToAction(nameof(Index));
             }
@@ -184,7 +186,7 @@ namespace Asp_net_Lab_1.Controllers
                     Price = productDTO.Price
                 };
 
-                // Додати новий продукт до списку
+                // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
                 DataEmulator.Products.Add(product);
                 return RedirectToAction(nameof(Privacy));
             }
@@ -258,7 +260,7 @@ namespace Asp_net_Lab_1.Controllers
             var product = DataEmulator.Products.FirstOrDefault(p => p.Id == id);
             if (product != null)
             {
-                // Видалити продукт зі списку
+                // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
                 DataEmulator.Products.Remove(product);
                 return RedirectToAction(nameof(Privacy));
             }
@@ -275,7 +277,7 @@ namespace Asp_net_Lab_1.Controllers
 
         public IActionResult Order()
         {
-            var orders = DataEmulator.Orders.Select(order => new OrderDTO
+            var orders = DataEmulator.Orders.Select(order => new OrderDto
             {
                 Id = order.Id,
                 UserId = order.UserId,
@@ -293,7 +295,7 @@ namespace Asp_net_Lab_1.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult CreateOrder(OrderDTO orderDTO)
+        public IActionResult CreateOrder(OrderDto orderDTO)
         {
             if (ModelState.IsValid)
             {
@@ -305,7 +307,7 @@ namespace Asp_net_Lab_1.Controllers
                     TotalPrice = orderDTO.TotalPrice
                 };
 
-                // Додати нове замовлення до списку
+                // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
                 DataEmulator.Orders.Add(order);
                 return RedirectToAction(nameof(Order));
             }
@@ -320,7 +322,7 @@ namespace Asp_net_Lab_1.Controllers
                 return NotFound();
             }
 
-            var orderDTO = new OrderDTO
+            var orderDTO = new OrderDto
             {
                 Id = order.Id,
                 UserId = order.UserId,
@@ -333,7 +335,7 @@ namespace Asp_net_Lab_1.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult EditOrder(OrderDTO orderDTO)
+        public IActionResult EditOrder(OrderDto orderDTO)
         {
             if (ModelState.IsValid)
             {
@@ -361,7 +363,7 @@ namespace Asp_net_Lab_1.Controllers
                 return NotFound();
             }
 
-            var orderDTO = new OrderDTO
+            var orderDTO = new OrderDto
             {
                 Id = order.Id,
                 UserId = order.UserId,
@@ -379,7 +381,7 @@ namespace Asp_net_Lab_1.Controllers
             var order = DataEmulator.Orders.FirstOrDefault(o => o.Id == id);
             if (order != null)
             {
-                // Видалити замовлення зі списку
+                // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
                 DataEmulator.Orders.Remove(order);
                 return RedirectToAction(nameof(Order));
             }

@@ -1,7 +1,7 @@
 ﻿
-namespace Asp_net_Lab_1.Models
+namespace DataEmulator
 {
-    public class DataEmulator 
+    public class MockData 
     {
         
         public static List<User> Users { get; set; } = new List<User>

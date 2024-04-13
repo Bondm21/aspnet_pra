@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Asp_net_Lab_1.Models
 {
-    public class User
+    public class UserViewModel
     {
         public int Id { get; set; }
 
