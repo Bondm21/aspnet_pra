@@ -1,0 +1,27 @@
+﻿@model OrderDTO
+@using Asp_net_Lab_1.Resources
+@using Microsoft.Extensions.Localization
+@using OrderDTO = DataEmulator.DTOs.OrderDto
+@inject IStringLocalizer<Texts> Localizer 
+
+<h2>@Localizer["Delete_order"]</h2>
+
+<p>@Localizer["sure_you_want_delete_order"]</p>
+
+<div>
+    <h4>@Localizer["about_order"]</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">@Localizer["Full_name:"]</dt>
+        <dd class="col-sm-10">@Model.ProductName</dd>
+
+    </dl>
+
+    <form asp-action="DeleteOrder" method="post">
+        <input type="hidden" asp-for="Id" />
+        <div class="form-group">
+            <input type="submit" value=@Localizer["Confirm_deletion"] class="btn btn-danger" />
+            <a asp-action="Index" class="btn btn-secondary">@Localizer["Create"]</a>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,40 @@
+﻿@model IEnumerable<DataEmulator.DTOs.UserDto>
+@using Asp_net_Lab_1.Resources
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<Texts> Localizer
+
+<h2>@Localizer["Customers"]</h2>
+
+<p>
+    <a asp-action="CreateUser">@Localizer["Create_new_customer"]</a>
+</p>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>@Localizer["Full_name"]</th>
+            <th>@Localizer["Email"]</th>
+            <th>@Localizer["Phone_number"]</th>
+            <th>@Localizer["Address"]</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Id</td>
+                <td>@user.FullName</td>
+                <td>@user.Email</td>
+                <td>@user.PhoneNumber</td>
+                <td>@user.Address</td>
+                <td>
+                    <a asp-action="EditUser" asp-route-id="@user.Id">@Localizer["Edit"]</a> |
+                    <a asp-action="DeleteUser" asp-route-id="@user.Id">@Localizer["Delete"]</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

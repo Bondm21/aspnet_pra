@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "ywmCEB0z62AJ9ycQUboznCVZicK4r72Q121onTv/D0wOdfauPKAZfhmMQbDUUKSAb/FmEHApFoPFoawCgvm+ew==",
+  "success": true,
+  "projectFilePath": "D:\\edu_3_2\\asp.net(3)\\aspnet_pra-example\\Asp_net_Lab_1\\DataEm\\DataEmulator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kolbond\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.28\\microsoft.windowsdesktop.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\kolbond\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.28\\microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\kolbond\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.28\\microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512"
+  ],
+  "logs": []
+}

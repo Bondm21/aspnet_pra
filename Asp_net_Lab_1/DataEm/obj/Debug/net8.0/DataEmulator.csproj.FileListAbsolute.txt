@@ -1,0 +1,11 @@
+C:\Users\kolbond\source\repos\Asp_net_Lab_1\DataEm\bin\Debug\net8.0\DataEmulator.deps.json
+C:\Users\kolbond\source\repos\Asp_net_Lab_1\DataEm\bin\Debug\net8.0\DataEmulator.dll
+C:\Users\kolbond\source\repos\Asp_net_Lab_1\DataEm\bin\Debug\net8.0\DataEmulator.pdb
+C:\Users\kolbond\source\repos\Asp_net_Lab_1\DataEm\obj\Debug\net8.0\DataEmulator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kolbond\source\repos\Asp_net_Lab_1\DataEm\obj\Debug\net8.0\DataEmulator.AssemblyInfoInputs.cache
+C:\Users\kolbond\source\repos\Asp_net_Lab_1\DataEm\obj\Debug\net8.0\DataEmulator.AssemblyInfo.cs
+C:\Users\kolbond\source\repos\Asp_net_Lab_1\DataEm\obj\Debug\net8.0\DataEmulator.csproj.CoreCompileInputs.cache
+C:\Users\kolbond\source\repos\Asp_net_Lab_1\DataEm\obj\Debug\net8.0\DataEmulator.dll
+C:\Users\kolbond\source\repos\Asp_net_Lab_1\DataEm\obj\Debug\net8.0\refint\DataEmulator.dll
+C:\Users\kolbond\source\repos\Asp_net_Lab_1\DataEm\obj\Debug\net8.0\DataEmulator.pdb
+C:\Users\kolbond\source\repos\Asp_net_Lab_1\DataEm\obj\Debug\net8.0\ref\DataEmulator.dll

@@ -1,0 +1,11 @@
+D:\edu_3_2\asp.net(3)\aspnet_pra-example\Asp_net_Lab_1\DataEm\obj\Debug\net6.0\DataEmulator.GeneratedMSBuildEditorConfig.editorconfig
+D:\edu_3_2\asp.net(3)\aspnet_pra-example\Asp_net_Lab_1\DataEm\obj\Debug\net6.0\DataEmulator.AssemblyInfoInputs.cache
+D:\edu_3_2\asp.net(3)\aspnet_pra-example\Asp_net_Lab_1\DataEm\obj\Debug\net6.0\DataEmulator.AssemblyInfo.cs
+D:\edu_3_2\asp.net(3)\aspnet_pra-example\Asp_net_Lab_1\DataEm\obj\Debug\net6.0\DataEmulator.csproj.CoreCompileInputs.cache
+D:\edu_3_2\asp.net(3)\aspnet_pra-example\Asp_net_Lab_1\DataEm\bin\Debug\net6.0\DataEmulator.deps.json
+D:\edu_3_2\asp.net(3)\aspnet_pra-example\Asp_net_Lab_1\DataEm\bin\Debug\net6.0\DataEmulator.dll
+D:\edu_3_2\asp.net(3)\aspnet_pra-example\Asp_net_Lab_1\DataEm\bin\Debug\net6.0\DataEmulator.pdb
+D:\edu_3_2\asp.net(3)\aspnet_pra-example\Asp_net_Lab_1\DataEm\obj\Debug\net6.0\DataEmulator.dll
+D:\edu_3_2\asp.net(3)\aspnet_pra-example\Asp_net_Lab_1\DataEm\obj\Debug\net6.0\refint\DataEmulator.dll
+D:\edu_3_2\asp.net(3)\aspnet_pra-example\Asp_net_Lab_1\DataEm\obj\Debug\net6.0\DataEmulator.pdb
+D:\edu_3_2\asp.net(3)\aspnet_pra-example\Asp_net_Lab_1\DataEm\obj\Debug\net6.0\ref\DataEmulator.dll

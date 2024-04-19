@@ -1,0 +1,87 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Asp_net_Lab_1
+build_property.RootNamespace = Asp_net_Lab_1
+build_property.ProjectDir = D:\edu_3_2\asp.net(3)\aspnet_pra-example\Asp_net_Lab_1\Asp_net_Lab_1\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\edu_3_2\asp.net(3)\aspnet_pra-example\Asp_net_Lab_1\Asp_net_Lab_1
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/edu_3_2/asp.net(3)/aspnet_pra-example/Asp_net_Lab_1/Asp_net_Lab_1/Views/Customer/CreateProd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQ3JlYXRlUHJvZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/edu_3_2/asp.net(3)/aspnet_pra-example/Asp_net_Lab_1/Asp_net_Lab_1/Views/Customer/DeleteProd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcRGVsZXRlUHJvZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/edu_3_2/asp.net(3)/aspnet_pra-example/Asp_net_Lab_1/Asp_net_Lab_1/Views/Customer/EditProd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcRWRpdFByb2QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/edu_3_2/asp.net(3)/aspnet_pra-example/Asp_net_Lab_1/Asp_net_Lab_1/Views/Customer/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/edu_3_2/asp.net(3)/aspnet_pra-example/Asp_net_Lab_1/Asp_net_Lab_1/Views/Order/CreateOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQ3JlYXRlT3JkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/edu_3_2/asp.net(3)/aspnet_pra-example/Asp_net_Lab_1/Asp_net_Lab_1/Views/Order/DeleteOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRGVsZXRlT3JkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/edu_3_2/asp.net(3)/aspnet_pra-example/Asp_net_Lab_1/Asp_net_Lab_1/Views/Order/EditOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRWRpdE9yZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/edu_3_2/asp.net(3)/aspnet_pra-example/Asp_net_Lab_1/Asp_net_Lab_1/Views/Order/Order.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcT3JkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/edu_3_2/asp.net(3)/aspnet_pra-example/Asp_net_Lab_1/Asp_net_Lab_1/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/edu_3_2/asp.net(3)/aspnet_pra-example/Asp_net_Lab_1/Asp_net_Lab_1/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/edu_3_2/asp.net(3)/aspnet_pra-example/Asp_net_Lab_1/Asp_net_Lab_1/Views/User/CreateUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDcmVhdGVVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/edu_3_2/asp.net(3)/aspnet_pra-example/Asp_net_Lab_1/Asp_net_Lab_1/Views/User/DeleteUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZWxldGVVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/edu_3_2/asp.net(3)/aspnet_pra-example/Asp_net_Lab_1/Asp_net_Lab_1/Views/User/EditUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0VXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/edu_3_2/asp.net(3)/aspnet_pra-example/Asp_net_Lab_1/Asp_net_Lab_1/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/edu_3_2/asp.net(3)/aspnet_pra-example/Asp_net_Lab_1/Asp_net_Lab_1/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/edu_3_2/asp.net(3)/aspnet_pra-example/Asp_net_Lab_1/Asp_net_Lab_1/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/edu_3_2/asp.net(3)/aspnet_pra-example/Asp_net_Lab_1/Asp_net_Lab_1/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-eskhx3ofqm
